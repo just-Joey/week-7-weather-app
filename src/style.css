@@ -1,6 +1,6 @@
 .weather-app-wrapper {
   margin-top: 50px;
-  max-width: 600px;
+  max-width: 620px;
   border: solid lightgray;
   border-radius: 7px;
   padding: 20px;
@@ -21,7 +21,7 @@ h2 {
 }
 
 .units {
-  font-size: 20px;
+  font-size: 35px;
   display: inline;
 }
 
