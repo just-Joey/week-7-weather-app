@@ -9,8 +9,8 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-		<link rel="stylesheet" href="src/style.css" />
-		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Weather App</title>
   </head>
   <body>
@@ -25,46 +25,52 @@
                 class="form-control"
                 id="city-input"
               />
-						</div>
-						
+            </div>
+
             <div class="col-3">
               <input type="submit" value="search" class="btn btn-primary" />
             </div>
           </div>
         </form>
-     
 
-      <div class="row">
-        <div class="col-8">
-          <h1 id ="city"></h1>
+        <div class="row">
+          <div class="col-8">
+            <h1 id="city"></h1>
 
-          <ul>
-						<li>Last updated: <span id="date"></span></li>
-						<li id="description"></li>
-            <li>Humidity:  <span id="humidity"></span>%</li>
-            <li>Wind: <span id="wind"></span> 
-              km/h</li>
-          </ul>
-        </div>
-        <div class="col-4">
-          <h2><strong id="temperature"></strong> <span class="units">°<a href="#" id="celsius-link"</a>C</a>| <a href="#" id="fahrenheit-link">F</a></span></h2>
-          <div class="weather-icon">
-            <img src="img/5729393_cloudy_moon_night_cloud_weather_icon.svg" id="icon"/>
+            <ul>
+              <li>Last updated: <span id="date"></span></li>
+              <li id="description"></li>
+              <li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind"></span> km/h</li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <h2>
+              <strong id="temperature"></strong
+              ><span class="fahrenheit">°F</span>
+            </h2>
+            <div class="weather-icon">
+              <img
+                src="img/5729393_cloudy_moon_night_cloud_weather_icon.svg"
+                id="icon"
+              />
+            </div>
           </div>
         </div>
-       </div> 
-       
 
-      <div class="weather-forecast" id="forecast"></div>
+        <div class="weather-forecast" id="forecast"></div>
       </div>
 
       <div class="footer">
-        <p><a href="https://github.com/AllGirlsFall/week-7-weather-app">Open source code</a> by Joey Maes</p>
+        <p>
+          <a href="https://github.com/AllGirlsFall/week-7-weather-app"
+            >Open source code</a
+          >
+          by Joey Maes
+        </p>
       </div>
+    </div>
 
-      
-		</div>
-		
-		<script src="src/app.js"></script>
+    <script src="src/app.js"></script>
   </body>
 </html>
